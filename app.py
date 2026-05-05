@@ -103,21 +103,21 @@ st.write(f"Accuracy: {accuracy * 100:.2f}%")
 st.subheader("Try a Prediction")
 
 
-lub oil temp = st.number_input("Lub Oil Temperature [C] Max(89.59)", value=45)
-Coolant temp = st.number_input("Coolant Temp [C] Max(195.53)", value=100)
-Lub oil pressure = st.number_input("Lube oil Pressure [Bar] (Max 7.27)", value=3.5)
-Fuel pressure = st.number_input("Fuel Pressure [Bar] (Max 21.14)", value=11)
-Coolant pressure = st.number_input("Coolant Pressure [Bar] (Max 7.48)", value=3.5)
-Engine rpm = st.number_input("Rotational speed [RPM]", value=1000)
+lub_oil_temp = st.number_input("Lub Oil Temperature [C] Max(89.59)", value=45)
+Coolant_temp = st.number_input("Coolant Temp [C] Max(195.53)", value=100)
+Lub_oil_pressure = st.number_input("Lube oil Pressure [Bar] (Max 7.27)", value=3.5)
+Fuel_pressure = st.number_input("Fuel Pressure [Bar] (Max 21.14)", value=11)
+Coolant_pressure = st.number_input("Coolant Pressure [Bar] (Max 7.48)", value=3.5)
+Engine_rpm = st.number_input("Rotational speed [RPM]", value=1000)
 
 
 input_df = pd.DataFrame({
-    "Lub Oil Temperature [C] Max(89.59)": [lub oil temp],
-    "Coolant Temp [C] Max(195.53)": [Coolant temp],
-    "Lube oil Pressure [Bar] (Max 7.27)": [Lub oil pressure],
-    "Fuel Pressure [Bar] (Max 21.14)": [Fuel pressure],
-    "Coolant Pressure [Bar] (Max 7.48)": [Coolant pressure],
-    "Rotational speed [RPM]": [Engine rpm]
+    "Lub Oil Temperature [C] Max(89.59)": [lub_oil_temp],
+    "Coolant Temp [C] Max(195.53)": [Coolant_temp],
+    "Lube oil Pressure [Bar] (Max 7.27)": [Lub_oil_pressure],
+    "Fuel Pressure [Bar] (Max 21.14)": [Fuel_pressure],
+    "Coolant Pressure [Bar] (Max 7.48)": [Coolant_pressure],
+    "Rotational speed [RPM]": [Engine_rpm]
 })
 
 # Match training columns after get_dummies
